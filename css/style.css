@@ -1,0 +1,739 @@
+
+/*____________DICIONARIO________________--- */
+:root {
+	--warm-almond-beige: #F5EBDC;
+	--white-color: #ffffff;
+	--text-color: #6D4C41;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*______________________________________________________________________/
+/*________________HEADER_____________*/ 
+
+.melo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 6rem;
+}
+
+.container-user {
+	display: flex;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.container-user .fa-user {
+	font-size: 3rem;
+	color: var(--text-color);
+	padding-right: 2.5rem;
+	border-right: 1px solid #e2e2e2;
+}
+
+.container-user .fa-basket-shopping {
+	font-size: 3rem;
+	color: var(--text-color);
+	padding-left: 1rem;
+}
+
+.content-shopping-cart {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Playfair Display', serif;
+	color: var(--text-color);
+}
+
+span.text {
+    padding: 1rem;
+}
+
+img, svg {
+    vertical-align: middle;
+    height: 9rem;
+}
+
+/*______________________________________________________________________/
+
+/* _____________________NAVBAR ______________________ */
+.container-navbar {
+	background-color: var(--warm-almond-beige);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.navbar .fa-bars {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: var(--text-color);
+	font-weight: 600;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.menu a::after {
+	content: '';
+	width: 1.5rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.menu a:hover::after {
+	opacity: 1;
+}
+
+.menu a:hover {
+	color: #fff;
+}
+
+.search-form {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 2px solid #fff;
+	border-radius: 2rem;
+	background-color: #fff;
+	height: 4.4rem;
+	overflow: hidden;
+}
+
+.search-form input {
+	outline: none;
+	font-family: inherit;
+	border: none;
+	width: 25rem;
+	font-size: 1.4rem;
+	padding: 0 2rem;
+	color: #777;
+	cursor: pointer;
+}
+
+.search-form input::-webkit-search-cancel-button {
+	appearance: none;
+}
+
+.search-form .btn-search {
+	border: none;
+	background-color: var(--text-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 1rem;
+}
+
+.btn-search i {
+	font-size: 2rem;
+	color: #fff;
+}
+/*______________________________________________________________________/
+
+
+/* _____________BANNER ________________________ */
+.banner {
+	background-image: 
+	url('../img/chocolate-brownies-with-vanilla-ice-cream.jpg');
+		height: 60rem;
+	background-size: cover;
+	background-position: center;
+}
+
+.content-banner {
+	max-width: 42rem;
+    margin: 0rem;
+    padding: 16.8rem 3rem;
+	background-color: #99999942;
+}
+
+.content-banner p {
+	color: var(--warm-almond-beige);
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.content-banner h2 {
+	color: #fff;
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.content-banner  .eat{
+	margin-top: 2rem;
+	text-decoration: none;
+	color: var(--text-color);
+	background-color: var(--warm-almond-beige);
+	display: inline-block;
+	padding: 2.2rem 3rem;
+	text-transform: uppercase;
+	border-radius: 3rem;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+
+h2 {
+    text-align: left;
+	color: #4b4a4a;
+}
+
+.col-md-4 {
+	flex: 0 0 auto;
+	width: 49.3333%;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 3.3rem;
+	text-align: left;
+	
+}
+
+
+.our-philosophy h3{
+	color: var(--text-color);
+}
+
+
+.our-philosophy ul{
+	color: #212529;
+}
+
+.about-us {
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .about-us img {
+	width: 100%;
+	height: 80%;
+  }
+
+  h3{
+	margin-top: 2rem;
+    margin-bottom: rem;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 22.2968px;
+    text-align: left;
+  }
+
+
+  strong {
+    font-weight: bolder;
+}
+
+.sweet-message {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 22px;
+	color: #6D4C41; 
+	text-align: center;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: #ffedb9; 
+	display: inline-block;
+	border-radius: 10px;
+	box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .arrow-down {
+	position: absolute;
+	bottom: 2.1rem;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    border-left: 5px solid #6D4C41;
+    border-bottom: 5px solid #6D4C41;
+    transform: rotate(-45deg);
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+
+
+  @keyframes bounce {
+	0%, 100% {
+	  transform: translateX(-50%) translateY(0) rotate(-45deg);
+	}
+	50% {
+	  transform: translateX(-50%) translateY(10px) rotate(-45deg);
+	}
+  }
+  /*_______________________________________________________________*/
+
+/*___________SECTION OUR PRODUCTS________________*/
+
+section.container.our-products {
+    height: 67rem;
+}
+
+.container-fluid.top-products {
+    background-color: #9996960f;
+}
+
+.heading-1 {
+	font-family: 'Playfair Display', serif;
+	font-size: font-size 3.3rem;
+    color: #6D4C41;
+    line-height: 1.6;
+	text-align: center;
+}
+
+.top-products {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+	height: 32rem;
+}
+
+.container-our-products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+
+.card-category {
+	height: 20rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+	gap: 2rem;
+}
+
+.category-tiramisu {
+	background-image: linear-gradient(#00000080, #00000080),
+	url('../img/tiramusu.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.category-chocolate {
+	background-image: linear-gradient(#00000080, #00000080),
+		url('../img/chcolate-bronnie.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.category-cookies{
+	background-image: linear-gradient(#00000080, #00000080),
+	url('../img/cookies.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.card-category p {
+	font-size: 2.5rem;
+	color: var(--white-color);
+	text-transform: capitalize;
+	position: relative;
+}
+
+.card-category p::after {
+	content: '';
+	width: 2.5rem;
+	height: 2px;
+	background-color:var(--white-color);
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+
+
+.card-category span {
+	font-size: 1.6rem;
+	color:var(--white-color);
+	cursor: pointer;
+}
+
+
+.card-category span:hover {
+	color: var(--warm-almond-beige);
+}
+
+
+.card-category {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-category:hover {
+    transform: scale(1.05); /* Pequeño zoom al hacer hover */
+}
+
+.card-category:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Más oscuro en hover */
+    border-radius: 2rem;
+}
+
+.card-category span {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card-category:hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-category a {
+    text-decoration: none; 
+    z-index: 2; 
+}
+
+.card-category:hover {
+    transform: scale(1.05);
+}
+
+/*______________________________________________________________*/
+
+/*__________FOOTER____________*/
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0rem;
+    gap: 3rem;
+    justify-items: center;
+}
+.footer {
+	background-color: var(--warm-almond-beige);
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+}
+
+
+.title-footer {
+	font-weight: 600;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: var(--text-color);
+	
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #4b4a4a;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #4b4a4a;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: var(--text-color);
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.youtube {
+	background-color: #c4302b;
+}
+
+.pinterest {
+	background-color: #c8232c;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+
+/*__________________________RESPONSIVE ___________________*/
+
+@media (max-width: 480px) and (min-width: 361px) { 
+	.about-us img {
+    display: none;
+    }
+
+	h2 {
+        font-size: 12px;
+        width: 362px;
+    }
+	.about-us {
+		height: 1vh;
+	}
+    .sweet-message {
+        font-size: 14px;
+        margin-top: 3px;
+        width: 47rem;
+    }
+	section.container.our-products {
+		height: 56rem;
+	}
+	.category p {
+		font-size: 1.6rem;
+		padding: 3px;
+
+	}
+	.content-banner h2 {
+		font-size: 1.6rem;
+	}
+	.content-banner  {
+		background-color: #99999942;
+				font-size: 1.6rem;}
+}
+
+@media (max-width: 991px) {
+	html {
+		font-size: 55%;
+	}
+
+	.content-shopping-cart {
+		display: none;
+	}
+
+	.navbar {
+		padding: 1rem 2rem;
+	}
+
+	.navbar .fa-bars {
+		display: block;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+	}
+
+	.container-features {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 2rem;
+	}
+
+	.card-feature {
+		padding: 2rem;
+	}
+
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 15rem);
+	}
+
+	.container-blogs {
+		overflow: hidden;
+		grid-template-columns: 1fr 1fr;
+
+		height: 52rem;
+	}
+
+
+
+	.copyright {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+} 
+
+@media (max-width: 900px) {
+	
+	.sweet-message {
+				font-size: 15px;
+				margin-top: 3px;}
+
+	.content-banner{
+		padding: 8rem;
+		margin:0} 
+
+	.arrow-down {
+	display: none; 
+						} 
+}
+
+
+@media (max-width: 1024px) {
+	.arrow-down {
+		bottom: 15.1rem !important;
+			} 
+	.content-banner {
+		padding: 9.8rem !important; 
+			}
+			.about-us img {
+				width: 100%;
+				height: 66%;
+			}
+
+			h2 {
+			
+				font-size: 1.6rem;
+			}
+ }
+
+
+
+@media (max-width: 1280px) and (min-width: 1025px) { 
+	.about-us img {
+		width: 91%;
+		height: 65%;
+	}
+	.arrow-down {
+		bottom: 16.1rem;
+			}
+
+			h2 {
+			
+				font-size: 1.8rem;
+			}
+
+}
+
+@media (max-width: 1440px) and (min-width: 1281px) { 
+
+	.arrow-down {
+			bottom: 19.1rem;
+				}
+	
+	.about-us img {
+					width: 91%;
+					height: 65%;
+				}
+	}
+
+
+@media (max-width: 1920px) and (min-width: 1600px) { 
+	.arrow-down {
+		display: none;
+			
+		}
+		
+	.about-us img {
+		width: 91%;
+		height: 65%;
+	}
+}
+
+
+
+
