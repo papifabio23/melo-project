@@ -205,6 +205,7 @@ strong {
 	}
 
 	.navbar .fa-bars {
+		cursor: pointer;
 		display: block;
 		color: #fff;
 		font-size: 3rem;
@@ -212,7 +213,23 @@ strong {
 
 	.menu {
 		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: var(--warm-almond-beige);
+		text-align: center;
+		padding: 1rem 0;
+		z-index:100; 
+		
 	}
+
+	.menu.active{
+		display:flex;
+	}
+
+	
 
 	.content-banner {
 		max-width: 50rem;
