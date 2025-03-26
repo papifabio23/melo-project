@@ -181,7 +181,7 @@ img, svg {
     }
 
     .container-features .row {
-        flex-direction: column; /* Apila las tarjetas en móviles */
+        flex-direction: column; 
     }
 
     .card-feature {
@@ -192,8 +192,10 @@ img, svg {
         background: #fff;
         padding: 15px;
         border-radius: 10px;
-        margin-bottom: 10px; /* Espaciado entre tarjetas */
+        margin-bottom: 10px; 
     }
+
+
 
     .card-feature i {
         font-size: 2rem; 
@@ -221,6 +223,7 @@ img, svg {
 	html {
 		font-size: 55%;
 	}
+	
 	.eat {
 		margin-left: 0 !important;
 		padding: 1.2rem 4rem !important;
@@ -260,12 +263,13 @@ img, svg {
 	.content-banner {
 		max-width: 50rem;
 		margin: 0 auto;
-		padding: 25rem 0;
 	}
 
 	.container-features {
 		grid-template-columns: repeat(2, 1fr);
 		padding: 3rem 2rem;
+		padding: 11px !important;
+
 	}
 
 	.card-feature {
@@ -315,6 +319,11 @@ img, svg {
 		margin-top: 1% !important;
 		max-width: 250px !important;
     }
+	.sweet-message {
+		padding: 2px !important;
+		margin-top: 5px !important;
+
+	}
 
 	
 }
